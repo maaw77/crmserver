@@ -13,10 +13,10 @@ PORT_DB=5432
 ```
 3. В папке с проектом выполнить команды
 ```commandline
-sudo docker build -t crmserver .
+docker build -t crmserver .
 ```
 ```commandline
-sudo docker run --network=crm_default --name=crmserver --rm -it -p 8080:8080 crmserver
+docker run --network=crm_default --name=crmserver --rm -it -p 8080:8080 crmserver
 ```
 ## Описание API
 Сервис доступен без авторизации пользователя.

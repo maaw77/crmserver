@@ -21,7 +21,7 @@ docker run --network=crm_default --name=crmserver --rm -it -p 8080:8080 crmserve
 ## Описание API
 Сервис доступен без авторизации пользователя.
 ### 1. Список конечных точек
-Get-request: `http://0.0.0.0:8080/`.<br>
+Get-request: `http://localhost:8080/`.<br>
 Response: 
 
 - status code - 200; <br>
@@ -32,7 +32,7 @@ Response:
           "/exchange_table", "/remains_table"]}
 ```
 ### 2. Таблица «Прием»
-Get-request: `http://0.0.0.0:8080/gsm_table/{date}`, где date = _YYYY-MM-DD_.<br>
+Get-request: `http://localhost:8080/gsm_table/{date}`, где date = _YYYY-MM-DD_.<br>
 Response:<br> 
 - status code - 200; <br>
 - body - 
@@ -60,7 +60,7 @@ Response:<br>
           ...]
 ```
 ### 3. Таблица «Выдача в АТЗ»
-Get-request: `http://0.0.0.0:8080/tank_table/{date}`, где date = _YYYY-MM-DD_.<br>
+Get-request: `http://localhost:8080/tank_table/{date}`, где date = _YYYY-MM-DD_.<br>
 Response:<br> 
 - status code - 200; <br>
 - body - 
@@ -84,7 +84,7 @@ Response:<br>
          ...]
 ```
 ### 4. Таблица «Выдача из АТЗ»
-Get-request: `http://0.0.0.0:8080/sheet_table/{date}`, где date = _YYYY-MM-DD_.<br>
+Get-request: `http://localhost:8080/sheet_table/{date}`, где date = _YYYY-MM-DD_.<br>
 Response:<br> 
 - status code - 200; <br>
 - body - 
@@ -110,7 +110,7 @@ Response:<br>
           ...]
 ```
 ### 5. Таблица «Выдача из ТРК»
-Get-request: `http://0.0.0.0:8080/azs_table/{date}`, где date = _YYYY-MM-DD_.<br>
+Get-request: `http://localhost:8080/azs_table/{date}`, где date = _YYYY-MM-DD_.<br>
 Response:<br> 
 - status code - 200; <br>
 - body - 
@@ -138,7 +138,7 @@ Response:<br>
           ...]
 ```
 ### 6. Таблица «Обмен между резервуарами»
-Get-request: `http://0.0.0.0:8080/exchange_table/{date}`, где date = _YYYY-MM-DD_.<br>
+Get-request: `http://localhost:8080/exchange_table/{date}`, где date = _YYYY-MM-DD_.<br>
 Response:<br> 
 - status code - 200; <br>
 - body - 
@@ -164,7 +164,7 @@ Response:<br>
           ...]
 ```
 ### 7. Таблица «Снятие остатков»
-Get-request: `http://0.0.0.0:8080/remains_table/{date}`, где date = _YYYY-MM-DD_.<br>
+Get-request: `http://localhost:8080/remains_table/{date}`, где date = _YYYY-MM-DD_.<br>
 Response:<br> 
 - status code - 200; <br>
 - body - 
